@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - IncomeOS</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fb;
+    }
+
+    .hero-bg{
+      background:
+      linear-gradient(rgba(2,6,23,0.92), rgba(2,6,23,0.92)),
+      url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .service-card{
+      transition: 0.35s ease;
+    }
+
+    .service-card:hover{
+      transform: translateY(-10px);
+    }
+
+    .shadow-soft{
+      box-shadow: 0 10px 40px rgba(15,23,42,.08);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="hero-bg text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+
+      <div class="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center text-white text-2xl font-bold">
+        $
+      </div>
+
+      <div>
+        <h1 class="text-2xl font-extrabold">IncomeOS</h1>
+        <p class="text-sm text-white/70">
+          Learn. Create. Publish. Earn.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- NAV LINKS -->
+    <nav class="hidden lg:flex items-center gap-10 text-white/85 font-medium">
+      <a href="./incomeos-modern.html" class="hover:text-emerald-400 transition">Home</a>
+      <a href="./service.html" class="text-emerald-400">Services</a>
+      <a href="./mentor.html" class="hover:text-emerald-400 transition">Mentorship</a>
+      <a href="#" class="hover:text-emerald-400 transition">Blog</a>
+      <a href="#" class="hover:text-emerald-400 transition">Contact</a>
+    </nav>
+
+
+     <div class="flex items-center gap-4">
+      <button class="border border-white/30 text-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition">
+        <a href="./loginn.html">Login</a>
+      </button>
+
+      <button class="bg-emerald-500 hover:bg-emerald-600 transition text-white px-7 py-3 rounded-xl font-semibold">
+        Get Started
+      </button>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-7xl mx-auto px-6 pt-14 pb-24">
+
+    <div class="max-w-3xl">
+
+      <p class="text-emerald-400 font-semibold uppercase tracking-widest">
+        OUR SERVICES
+      </p>
+
+      <h2 class="text-5xl lg:text-7xl font-extrabold leading-tight mt-5">
+        Everything You Need
+        <span class="text-emerald-400">
+          To Earn Online
+        </span>
+      </h2>
+
+      <p class="mt-8 text-xl text-white/70 leading-relaxed">
+        IncomeOS provides powerful tools, mentorship,
+        digital skill training and systems designed to help
+        students build real online income streams.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-5">
+
+        <button class="bg-emerald-500 hover:bg-emerald-600 transition px-8 py-4 rounded-2xl text-lg font-semibold">
+          Explore Services
+        </button>
+
+        <button class="border border-white/20 hover:bg-white hover:text-black transition px-8 py-4 rounded-2xl text-lg font-medium">
+          Watch Demo
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</header>
+
+
+<!-- SERVICES -->
+<section class="max-w-7xl mx-auto px-6 -mt-12 relative z-20">
+
+  <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+    <!-- CARD 1 -->
+    <div class="service-card bg-white rounded-[30px] p-8 shadow-soft">
+
+      <div class="w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center text-3xl">
+        📘
+      </div>
+
+      <h3 class="text-2xl font-bold mt-6">
+        Digital Skill Courses
+      </h3>
+
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Learn high-income digital skills including UI/UX design,
+        content creation, AI tools, freelancing,
+        video editing and more.
+      </p>
+
+      <ul class="mt-6 space-y-3 text-slate-700">
+
+        <li>✓ Beginner Friendly</li>
+        <li>✓ Practical Projects</li>
+        <li>✓ AI Integrated Learning</li>
+        <li>✓ Certificate Access</li>
+
+      </ul>
+
+      <button class="mt-8 text-emerald-500 font-semibold hover:underline">
+        Learn More →
+      </button>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="service-card bg-white rounded-[30px] p-8 shadow-soft">
+
+      <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl">
+        🎥
+      </div>
+
+      <h3 class="text-2xl font-bold mt-6">
+        Content Creation
+      </h3>
+
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Build engaging content for YouTube,
+        TikTok, Instagram and other platforms
+        using professional systems and AI workflows.
+      </p>
+
+      <ul class="mt-6 space-y-3 text-slate-700">
+
+        <li>✓ Viral Content Strategies</li>
+        <li>✓ Video Editing Guidance</li>
+        <li>✓ Monetization Tips</li>
+        <li>✓ Branding & Growth</li>
+
+      </ul>
+
+      <button class="mt-8 text-blue-500 font-semibold hover:underline">
+        Learn More →
+      </button>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="service-card bg-white rounded-[30px] p-8 shadow-soft">
+
+      <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl">
+        🚀
+      </div>
+
+      <h3 class="text-2xl font-bold mt-6">
+        Mentorship Program
+      </h3>
+
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Get direct mentorship and accountability
+        from experienced creators and digital entrepreneurs.
+      </p>
+
+      <ul class="mt-6 space-y-3 text-slate-700">
+
+        <li>✓ Weekly Live Sessions</li>
+        <li>✓ Community Access</li>
+        <li>✓ Content Reviews</li>
+        <li>✓ Income Roadmaps</li>
+
+      </ul>
+
+      <button class="mt-8 text-purple-500 font-semibold hover:underline">
+        Learn More →
+      </button>
+
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="service-card bg-white rounded-[30px] p-8 shadow-soft">
+
+      <div class="w-16 h-16 rounded-2xl bg-orange-100 flex items-center justify-center text-3xl">
+        💰
+      </div>
+
+      <h3 class="text-2xl font-bold mt-6">
+        Freelancing System
+      </h3>
+
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Learn how to get clients online and earn
+        through freelancing platforms and remote jobs.
+      </p>
+
+      <ul class="mt-6 space-y-3 text-slate-700">
+
+        <li>✓ Fiverr Optimization</li>
+        <li>✓ Upwork Strategies</li>
+        <li>✓ Portfolio Building</li>
+        <li>✓ Client Acquisition</li>
+
+      </ul>
+
+      <button class="mt-8 text-orange-500 font-semibold hover:underline">
+        Learn More →
+      </button>
+
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="service-card bg-white rounded-[30px] p-8 shadow-soft">
+
+      <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center text-3xl">
+        🤖
+      </div>
+
+      <h3 class="text-2xl font-bold mt-6">
+        AI Tools Training
+      </h3>
+
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Master modern AI tools to boost productivity,
+        automate tasks and create faster online.
+      </p>
+
+      <ul class="mt-6 space-y-3 text-slate-700">
+
+        <li>✓ ChatGPT Workflows</li>
+        <li>✓ AI Content Systems</li>
+        <li>✓ Automation Tutorials</li>
+        <li>✓ Productivity Hacks</li>
+
+      </ul>
+
+      <button class="mt-8 text-pink-500 font-semibold hover:underline">
+        Learn More →
+      </button>
+
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="service-card bg-white rounded-[30px] p-8 shadow-soft">
+
+      <div class="w-16 h-16 rounded-2xl bg-cyan-100 flex items-center justify-center text-3xl">
+        📈
+      </div>
+
+      <h3 class="text-2xl font-bold mt-6">
+        Income Growth Strategy
+      </h3>
+
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Discover systems to build multiple streams
+        of income and scale your online business.
+      </p>
+
+      <ul class="mt-6 space-y-3 text-slate-700">
+
+        <li>✓ Passive Income Models</li>
+        <li>✓ Digital Product Sales</li>
+        <li>✓ Affiliate Marketing</li>
+        <li>✓ Long-Term Scaling</li>
+
+      </ul>
+
+      <button class="mt-8 text-cyan-500 font-semibold hover:underline">
+        Learn More →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+
+  <div class="bg-slate-950 rounded-[40px] p-10 lg:p-16 text-white">
+
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+      <div>
+
+        <p class="text-emerald-400 font-semibold uppercase tracking-widest">
+          WHY CHOOSE US
+        </p>
+
+        <h2 class="text-5xl font-extrabold leading-tight mt-5">
+          Designed For Students
+          & Future Creators
+        </h2>
+
+        <p class="mt-8 text-white/70 text-lg leading-relaxed">
+          We simplify digital opportunities and help students
+          build real-world income skills with mentorship,
+          AI systems and practical execution.
+        </p>
+
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+
+        <div class="glass rounded-3xl p-6">
+          <h3 class="text-4xl font-bold text-emerald-400">
+            12K+
+          </h3>
+          <p class="mt-2 text-white/70">
+            Students Enrolled
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-6">
+          <h3 class="text-4xl font-bold text-blue-400">
+            ₦20M+
+          </h3>
+          <p class="mt-2 text-white/70">
+            Generated Online
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-6">
+          <h3 class="text-4xl font-bold text-orange-400">
+            100%
+          </h3>
+          <p class="mt-2 text-white/70">
+            Online Learning
+          </p>
+        </div>
+
+        <div class="glass rounded-3xl p-6">
+          <h3 class="text-4xl font-bold text-purple-400">
+            24/7
+          </h3>
+          <p class="mt-2 text-white/70">
+            Community Support
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 text-white py-16">
+
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <h2 class="text-5xl font-extrabold">
+      Start Building Your Digital Income
+    </h2>
+
+    <p class="mt-5 text-white/60 text-xl">
+      Learn high-income skills and grow online with IncomeOS.
+    </p>
+
+    <button class="mt-10 bg-emerald-500 hover:bg-emerald-600 transition px-10 py-5 rounded-2xl text-xl font-semibold">
+      Get Started Today
+    </button>
+
+    <div class="mt-16 border-t border-white/10 pt-8 text-white/40">
+      © 2026 IncomeOS. All rights reserved.
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>

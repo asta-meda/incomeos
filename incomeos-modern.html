@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IncomeOS Modern Landing Page</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fb;
+      line-height: 1.6;
+    }
+
+    .hero-bg {
+      background: linear-gradient(90deg, rgba(2,8,34,0.96) 0%, rgba(3,10,40,0.94) 45%, rgba(4,14,52,0.74) 100%),
+                  url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+    }
+
+    .shadow-soft {
+      box-shadow: 0 10px 40px rgba(15,23,42,.08);
+    }
+
+    .card-border {
+      border: 1px solid #ebeff5;
+    }
+
+    /* Hover effects */
+    .hover\:scale-105:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="hero-bg border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+    <div class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-xl bg-emerald-500 flex items-center justify-center text-white font-bold text-xl">
+        $
+      </div>
+
+      <div>
+        <h1 class="text-2xl font-extrabold text-white">IncomeOS</h1>
+        <p class="text-xs text-slate-300">Learn. Create. Publish. Earn.</p>
+      </div>
+    </div>
+
+    <nav class="hidden lg:flex items-center gap-10 text-white/90 font-medium">
+      <a href="#" class="text-emerald-400">Home</a>
+      <a href="#">About</a>
+      <a href="./service.html">Services</a>
+      <a href="./mentor.html">Menteroship</a>
+      <a href="./blog.html">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <button class="border border-white/30 text-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition">
+        <a href="./loginn.html">Login</a>
+      </button>
+
+      <button class="bg-emerald-500 hover:bg-emerald-600 transition text-white px-7 py-3 rounded-xl font-semibold">
+        <a href="./loginn.html">Get Started</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="pt-10 pb-16">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- LEFT -->
+      <div>
+        <h1 class="text-5xl lg:text-7xl leading-tight font-extrabold text-white">
+          Transform Your
+          
+
+          Skills into
+          <span class="text-emerald-400">Income</span>
+        </h1>
+
+        <p class="mt-7 text-xl text-slate-300 max-w-xl leading-relaxed">
+          Empowering students to thrive in the digital economy.
+          Learn high-income digital skills, create content,
+          and build multiple online income streams.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-5">
+          <button class="bg-emerald-500 hover:bg-emerald-600 transition px-8 py-4 rounded-2xl text-white font-semibold text-lg">
+           <a href="./loginn.html"> Get Started for Free</a>
+          </button>
+          <button class="border border-white/30 px-8 py-4 rounded-2xl text-white text-lg hover:bg-white hover:text-black transition">
+             <a href="./service.html">Explore Services</a>
+          </button>
+        </div>
+
+        <div class="mt-10 flex items-center gap-5">
+          <div class="flex -space-x-3">
+            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/11.jpg">
+            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/21.jpg">
+            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/17.jpg">
+            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/42.jpg">
+          </div>
+
+          <div>
+            <p class="text-yellow-400 text-lg">★★★★★ <span class="text-white">4.9</span></p>
+            <p class="text-slate-300 text-sm">Join hundreds of students already earning online.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="relative">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-[32px] w-full h-[620px] object-cover shadow-2xl"
+        >
+
+        <!-- Floating Cards -->
+        <div class="absolute top-8 right-[-20px] glass p-5 rounded-2xl shadow-soft w-56">
+          <p class="text-slate-500 text-sm">Total Earnings</p>
+          <h3 class="text-3xl font-bold text-emerald-600 mt-2">₦325,600</h3>
+          <p class="text-emerald-500 text-sm mt-2">+32% this month</p>
+        </div>
+
+        <div class="absolute top-56 right-[-10px] glass p-5 rounded-2xl shadow-soft w-52">
+          <p class="text-slate-500 text-sm">Skills Learned</p>
+          <h3 class="text-4xl font-bold text-slate-800 mt-1">12</h3>
+          <p class="text-slate-500 text-sm">Awesome!</p>
+        </div>
+
+        <div class="absolute bottom-20 right-[-25px] glass p-5 rounded-2xl shadow-soft w-52">
+          <p class="text-slate-500 text-sm">Consistency Streak</p>
+          <h3 class="text-3xl font-bold text-orange-500 mt-2">14 Days</h3>
+          <p class="text-slate-500 text-sm">Keep it up!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+<!-- FEATURE STEPS -->
+<section class="max-w-7xl mx-auto px-6 -mt-8 relative z-20">
+  <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+    <div class="bg-white rounded-3xl p-7 shadow-soft card-border hover:scale-105 transition">
+      <div class="w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center text-2xl">
+        📘
+      </div>
+      <h3 class="font-bold text-xl mt-5 text-emerald-600">1. Learn Digital Skills</h3>
+      <p class="text-slate-600 mt-3 leading-relaxed">Acquire in-demand digital and AI-powered skills from beginner to pro.</p>
+    </div>
+
+    <div class="bg-white rounded-3xl p-7 shadow-soft card-border hover:scale-105 transition">
+      <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl">
+        ✏️
+      </div>
+      <h3 class="font-bold text-xl mt-5 text-blue-600">2. Create Engaging Content</h3>
+      <p class="text-slate-600 mt-3 leading-relaxed">Create videos, blogs and digital products using AI tools.</p>
+    </div>
+
+    <div class="bg-white rounded-3xl p-7 shadow-soft card-border hover:scale-105 transition">
+      <div class="w-14 h-14 rounded-2xl bg-purple-100 flex items-center justify-center text-2xl">
+        ☁️
+      </div>
+      <h3 class="font-bold text-xl mt-5 text-purple-600">3. Publish & Promote</h3>
+      <p class="text-slate-600 mt-3 leading-relaxed">Publish your content on top platforms and grow your audience.</p>
+    </div>
+
+    <div class="bg-white rounded-3xl p-7 shadow-soft card-border hover:scale-105 transition">
+      <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-2xl">
+        💰
+      </div>
+      <h3 class="font-bold text-xl mt-5 text-orange-500">4. Earn Multiple Streams</h3>
+      <p class="text-slate-600 mt-3 leading-relaxed">Monetize through freelancing, ads, affiliate marketing and products.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS + WHY -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="grid lg:grid-cols-2 gap-8">
+    <div class="bg-white rounded-[32px] p-10 shadow-soft card-border">
+      <h2 class="text-3xl font-bold text-slate-900">Student Success Stories</h2>
+      <div class="mt-10 flex gap-5 items-start">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-20 h-20 rounded-full">
+        <div>
+          <p class="text-slate-600 leading-relaxed text-lg">“IncomeOS changed my life. I went from watching videos to making consistent monthly income from YouTube and freelancing.”</p>
+          <div class="mt-5 flex items-center justify-between">
+            <div>
+              <h4 class="font-bold text-slate-900">David O.</h4>
+              <p class="text-slate-500">100 Level, Unilag</p>
+            </div>
+            <div class="text-right">
+              <h3 class="text-3xl font-bold text-emerald-500">$620</h3>
+              <p class="text-slate-500 text-sm">Monthly Earnings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-[32px] p-10 shadow-soft card-border">
+      <h2 class="text-3xl font-bold text-slate-900">Why Choose IncomeOS?</h2>
+      <div class="grid grid-cols-2 gap-8 mt-10">
+        <div>
+          <div class="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center text-2xl">🚀</div>
+          <h4 class="font-bold text-lg mt-4">Beginner Friendly</h4>
+        </div>
+        <div>
+          <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-2xl">💻</div>
+          <h4 class="font-bold text-lg mt-4">100% Online</h4>
+        </div>
+        <div>
+          <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-2xl">💵</div>
+          <h4 class="font-bold text-lg mt-4">Low Startup Cost</h4>
+        </div>
+        <div>
+          <div class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center text-2xl">📈</div>
+          <h4 class="font-bold text-lg mt-4">Multiple Income Streams</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 text-white py-16 mt-10">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-5xl font-extrabold">Ready to Start Earning Online?</h2>
+    <p class="mt-5 text-slate-400 text-xl">Join students building digital income streams with IncomeOS.</p>
+    <button class="mt-8 bg-emerald-500 hover:bg-emerald-600 transition px-10 py-5 rounded-2xl text-xl font-semibold">Get Started Free</button>
+    <p class="mt-16 text-slate-500">© 2026 IncomeOS. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

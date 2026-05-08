@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - IncomeOS</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      font-family: 'Inter', sans-serif;
+      background:
+      linear-gradient(rgba(2,6,23,0.92), rgba(2,6,23,0.92)),
+      url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .input-style{
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: white;
+    }
+
+    .input-style::placeholder{
+      color: rgba(255,255,255,0.45);
+    }
+
+    .input-style:focus{
+      outline: none;
+      border-color: #10b981;
+      box-shadow: 0 0 0 4px rgba(16,185,129,0.15);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center px-6">
+
+  <!-- MAIN CONTAINER -->
+  <div class="w-full max-w-6xl grid lg:grid-cols-2 rounded-[35px] overflow-hidden shadow-2xl">
+
+    <!-- LEFT SIDE -->
+    <div class="hidden lg:flex flex-col justify-between p-14 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white relative overflow-hidden">
+
+      <div class="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-72 h-72 bg-black/20 rounded-full blur-3xl"></div>
+
+      <div class="relative z-10">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-white text-emerald-600 flex items-center justify-center font-bold text-2xl">
+            $
+          </div>
+
+          <div>
+            <h1 class="text-3xl font-extrabold">IncomeOS</h1>
+            <p class="text-white/80 text-sm">
+              Learn. Create. Publish. Earn.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-20">
+          <h2 class="text-5xl font-extrabold leading-tight">
+            Turn Your Skills Into Income
+          </h2>
+
+          <p class="mt-6 text-lg text-white/85 leading-relaxed">
+            Access mentorship, digital skills training,
+            content creation systems and online income opportunities —
+            all in one platform.
+          </p>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="relative z-10 grid grid-cols-2 gap-5">
+
+        <div class="bg-white/10 backdrop-blur-lg p-5 rounded-2xl">
+          <h3 class="text-3xl font-bold">12K+</h3>
+          <p class="text-white/80 mt-1">Students</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-lg p-5 rounded-2xl">
+          <h3 class="text-3xl font-bold">₦20M+</h3>
+          <p class="text-white/80 mt-1">Generated</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="glass p-8 md:p-14">
+
+      <!-- MOBILE LOGO -->
+      <div class="lg:hidden flex items-center gap-3 mb-10">
+        <div class="w-11 h-11 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-bold text-xl">
+          $
+        </div>
+
+        <div>
+          <h1 class="text-2xl font-extrabold text-white">IncomeOS</h1>
+          <p class="text-white/60 text-sm">Learn. Create. Publish. Earn.</p>
+        </div>
+      </div>
+
+      <!-- HEADING -->
+      <div>
+        <h2 class="text-4xl font-extrabold text-white">
+          Welcome Back 👋
+        </h2>
+
+        <p class="text-white/60 mt-3 text-lg">
+          Login to continue your journey.
+        </p>
+      </div>
+
+      <!-- FORM -->
+      <form class="mt-10 space-y-6">
+
+        <!-- EMAIL -->
+        <div>
+          <label class="block text-sm font-medium text-white/80 mb-2">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="input-style w-full px-5 py-4 rounded-2xl transition"
+            required
+          >
+        </div>
+
+        <!-- PASSWORD -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <label class="block text-sm font-medium text-white/80">
+              Password
+            </label>
+
+            <a href="#" class="text-emerald-400 text-sm hover:underline">
+              Forgot Password?
+            </a>
+          </div>
+
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="input-style w-full px-5 py-4 rounded-2xl transition"
+            required
+          >
+        </div>
+
+        <!-- REMEMBER -->
+        <div class="flex items-center justify-between text-sm">
+
+          <label class="flex items-center gap-2 text-white/70">
+            <input type="checkbox" class="accent-emerald-500">
+            Remember me
+          </label>
+
+        </div>
+
+        <!-- BUTTON -->
+        <button
+          type="submit"
+          class="w-full bg-emerald-500 hover:bg-emerald-600 transition text-white py-4 rounded-2xl text-lg font-semibold shadow-lg shadow-emerald-500/20"
+        >
+        <a href="./dashboard.html">Login to Dashboard</a>
+        </button>
+
+      </form>
+
+      <!-- DIVIDER -->
+      <div class="flex items-center gap-4 my-8">
+        <div class="h-px bg-white/10 w-full"></div>
+        <span class="text-white/40 text-sm">OR</span>
+        <div class="h-px bg-white/10 w-full"></div>
+      </div>
+
+      <!-- SOCIAL LOGIN -->
+      <div class="grid grid-cols-2 gap-4">
+
+        <button class="bg-white/5 hover:bg-white/10 transition border border-white/10 py-4 rounded-2xl text-white font-medium">
+          Google
+        </button>
+
+        <button class="bg-white/5 hover:bg-white/10 transition border border-white/10 py-4 rounded-2xl text-white font-medium">
+          GitHub
+        </button>
+
+      </div>
+
+      <!-- SIGNUP -->
+      <p class="mt-10 text-center text-white/60">
+        Don’t have an account?
+        <a href="signup.html" class="text-emerald-400 hover:underline font-medium">
+          Create Account
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

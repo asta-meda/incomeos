@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IncomeOS Blog</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      font-family: 'Inter', sans-serif;
+      background:#f6f7fb;
+    }
+
+    .card{
+      box-shadow: 0 10px 40px rgba(15,23,42,.08);
+    }
+
+    .hover-up{
+      transition:0.3s ease;
+    }
+
+    .hover-up:hover{
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION HEADER -->
+<header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white font-bold">
+        $
+      </div>
+      <span class="font-extrabold text-slate-900 text-xl">IncomeOS</span>
+    </div>
+
+    <!-- NAV LINKS -->
+    <nav class="hidden md:flex items-center gap-8 text-slate-600 font-medium">
+
+      <a href="./incomeos-modern.html" class="hover:text-emerald-500">Home</a>
+      <a href="./blog.html" class="hover:text-emerald-500">Blog</a>
+      <a href="#" class="hover:text-emerald-500">Courses</a>
+      <a href="./mentor.html" class="hover:text-emerald-500">Mentorship</a>
+      <a href="./service.html" class="hover:text-emerald-500">About</a>
+
+    </nav>
+
+    <!-- BUTTON -->
+    <div class="flex items-center gap-3">
+
+      <button class="hidden md:block bg-slate-100 px-4 py-2 rounded-xl font-medium hover:bg-slate-200">
+        Login
+      </button>
+
+      <button class="bg-emerald-500 text-white px-5 py-2 rounded-xl font-semibold hover:bg-emerald-600">
+        Get Started
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-6 mt-10">
+
+  <div class="bg-white p-10 rounded-3xl card">
+
+    <p class="text-emerald-500 font-semibold">Featured Article</p>
+
+    <h2 class="text-4xl font-extrabold mt-3 text-slate-900">
+      How to Build a Digital Income System in 2026
+    </h2>
+
+    <p class="text-slate-500 mt-4 max-w-2xl">
+      Learn how to combine skills, content creation, and automation to build a sustainable online income system.
+    </p>
+
+    <button class="mt-6 bg-emerald-500 text-white px-6 py-3 rounded-2xl font-semibold hover:bg-emerald-600">
+      Read Article
+    </button>
+
+  </div>
+
+</section>
+
+<!-- BLOG POSTS -->
+<section class="max-w-6xl mx-auto px-6 mt-12">
+
+  <h2 class="text-2xl font-bold text-slate-900 mb-6">Latest Posts</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="bg-white p-6 rounded-3xl card hover-up">
+      <h3 class="font-bold text-lg">Top 5 Skills to Make Money Online</h3>
+      <p class="text-slate-500 text-sm mt-2">High-income skills for beginners.</p>
+      <p class="text-xs text-slate-400 mt-4">3 min read</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-3xl card hover-up">
+      <h3 class="font-bold text-lg">AI Tools for Creators</h3>
+      <p class="text-slate-500 text-sm mt-2">Automate content creation easily.</p>
+      <p class="text-xs text-slate-400 mt-4">4 min read</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-3xl card hover-up">
+      <h3 class="font-bold text-lg">Freelancing Starter Guide</h3>
+      <p class="text-slate-500 text-sm mt-2">Start earning globally today.</p>
+      <p class="text-xs text-slate-400 mt-4">6 min read</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-3xl card hover-up">
+      <h3 class="font-bold text-lg">Social Media Growth Hacks</h3>
+      <p class="text-slate-500 text-sm mt-2">Grow fast and monetize attention.</p>
+      <p class="text-xs text-slate-400 mt-4">5 min read</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-3xl card hover-up">
+      <h3 class="font-bold text-lg">Best Side Hustles 2026</h3>
+      <p class="text-slate-500 text-sm mt-2">Earn income while studying.</p>
+      <p class="text-xs text-slate-400 mt-4">7 min read</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-3xl card hover-up">
+      <h3 class="font-bold text-lg">Content Creation Blueprint</h3>
+      <p class="text-slate-500 text-sm mt-2">Idea → audience → income system.</p>
+      <p class="text-xs text-slate-400 mt-4">5 min read</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="mt-16 bg-white border-t border-slate-200">
+
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-4">
+
+    <p class="text-slate-500">
+      © 2026 IncomeOS. All rights reserved.
+    </p>
+
+    <div class="flex gap-6 text-slate-500">
+      <a href="#" class="hover:text-emerald-500">Privacy</a>
+      <a href="#" class="hover:text-emerald-500">Terms</a>
+      <a href="#" class="hover:text-emerald-500">Support</a>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
